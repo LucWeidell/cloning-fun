@@ -1,0 +1,49 @@
+body.debug .container,
+body.debug .container-fluid {
+  outline: 2px double blue;
+  outline-offset: -2px;
+}
+
+body.debug .row {
+  outline: 2px dashed red;
+  outline-offset: -2px;
+}
+
+body.debug [class*="col-"] {
+  outline: 2px dotted forestgreen;
+  outline-offset: -3px;
+}
+
+#hero-row{
+  background-image: url("hero-piano.jpg");
+  background-position: center;
+  min-height: 32vh;
+  max-height: 32vh;
+}
+
+.bck-cover {
+  background-size: cover;
+}
+
+.text-shadower {
+  color: white;
+  text-shadow: 1px 1px 15px black;
+}
+
+#hero-top{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#piano-options{
+  min-height: 25vh;
+  max-height: 25vh;
+  background-image: url("basic-instrument.jpg");
+  background-position: top;
+  font-size: 9pt;
+}
+
+#test {
+  flex-direction: column;
+}
