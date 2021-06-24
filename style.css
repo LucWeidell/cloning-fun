@@ -44,6 +44,3 @@ body.debug [class*="col-"] {
   font-size: 9pt;
 }
 
-#test {
-  flex-direction: column;
-}
