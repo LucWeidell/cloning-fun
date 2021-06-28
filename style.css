@@ -14,11 +14,15 @@ body.debug [class*="col-"] {
   outline-offset: -3px;
 }
 
+body.container-fluid{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 #hero-row{
   background-image: url("hero-piano.jpg");
   background-position: center;
-  min-height: 32vh;
-  max-height: 32vh;
 }
 
 .bck-cover {
@@ -30,17 +34,36 @@ body.debug [class*="col-"] {
   text-shadow: 1px 1px 15px black;
 }
 
-#hero-top{
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-
+.hero-margin {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
+
+.object-contain-covver{
+  object-fit: cover;
+}
+
 #piano-options{
-  min-height: 25vh;
-  max-height: 25vh;
   background-image: url("basic-instrument.jpg");
+  background-size: cover;
   background-position: top;
+  padding: 12vh 0;
   font-size: 9pt;
+}
+@media only screen and (max-width: 768px) {
+  #piano-options {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.height-50vh{
+  max-height:50vh
+}
+.bg-blue{
+  background-color: blue;
+}
+
+.bg-black {
+  background-color: black;
 }
 
